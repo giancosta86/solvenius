@@ -82,7 +82,7 @@ command =
     Signal.mergeMany
         [ (Signal.map TopScoreInput topScoreInput)
         , commandMailbox.signal
-        , (Signal.map TimeTick (Time.every Time.millisecond))
+        , (Signal.map TimeTick (Time.every (50 * Time.millisecond)))
         ]
 
 
