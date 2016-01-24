@@ -20,7 +20,7 @@ Solvenius is an HTML 5 game - which makes it compatible with a wide range of dev
 
 You can run it just by pointing your web browser to:
 
-[http://giancosta86.github.io/solvenius](http://giancosta86.github.io/solvenius)
+[http://gianlucacosta.info/solvenius](http://gianlucacosta.info/solvenius)
 
 
 ## Online help
