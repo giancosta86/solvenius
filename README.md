@@ -60,7 +60,9 @@ The author would like to thank - in order by surname:
 
 * *Alberto La Mantia*: for suggesting that game clues on sequence attempts should employ not only colors but also other visual elements
 
-* *Kevin MacLeod* (incompetech.com) for the excellent soundtrack
+* *Kevin MacLeod* (incompetech.com): for the excellent soundtrack
+
+* *Ivano Pagano*: for suggesting keyboard input support
 
 * *Paolo Tagliapietra*: for his suggestions on the previous version (Solvenius 2), for which he also created the Windows Phone version and hosted the on-cloud top score ladder
 

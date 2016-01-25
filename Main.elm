@@ -20,6 +20,10 @@ module Main (..) where
 
 import Signal
 import Time
+import Char
+import Set
+import List
+import Keyboard
 import Html exposing (..)
 import Solvenius.Title as Title
 import Solvenius.Game as Game
@@ -70,6 +74,7 @@ type Command
     | AboutCommand About.Command
     | TimeTick Time.Time
     | TopScoreInput TopScore.Model
+    | KeyPressed Char.KeyCode
 
 
 commandMailbox : Signal.Mailbox Command
@@ -80,10 +85,21 @@ commandMailbox =
 command : Signal.Signal Command
 command =
     Signal.mergeMany
-        [ (Signal.map TopScoreInput topScoreInput)
+        [ Signal.map TopScoreInput topScoreInput
         , commandMailbox.signal
-        , (Signal.map TimeTick (Time.every (50 * Time.millisecond)))
+        , Signal.map mapKeyPressed Keyboard.keysDown
+        , Signal.map TimeTick (Time.every (50 * Time.millisecond))
         ]
+
+
+mapKeyPressed: Set.Set Char.KeyCode -> Command
+mapKeyPressed keysDown =
+  KeyPressed (
+    keysDown
+      |> Set.toList
+      |> List.head
+      |> Maybe.withDefault 0
+  )
 
 
 updateModel : Command -> Model -> Model
@@ -153,6 +169,12 @@ updateModel command model =
                             { model
                                 | state =
                                     InGame (Game.updateModel (Game.TimeTick time) gameModel)
+                            }
+
+                        KeyPressed keyCode ->
+                            { model
+                                | state =
+                                    InGame (Game.updateModel (Game.KeyPressed keyCode) gameModel)
                             }
 
                         _ ->

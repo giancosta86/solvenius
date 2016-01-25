@@ -77,6 +77,7 @@ initModel =
 type Command
     = AppendDigit Digit
     | TimeTick Time.Time
+    | KeyPressed Char.KeyCode
     | BackToTitle Score
 
 
@@ -218,6 +219,11 @@ onAppendDigit digit model =
         }
 
 
+zeroDigitKeyCode: Char.KeyCode
+zeroDigitKeyCode =
+  Char.toCode '0'
+
+
 updateModel : Command -> Model -> Model
 updateModel command model =
     if inGame model then
@@ -227,6 +233,16 @@ updateModel command model =
 
             AppendDigit digit ->
                 onAppendDigit digit model
+
+            KeyPressed keyCode ->
+                if (zeroDigitKeyCode <= keyCode) && (keyCode <= zeroDigitKeyCode + 9) then
+                  let
+                    digit =
+                      Char.fromCode keyCode
+                  in
+                    onAppendDigit digit model
+                else
+                  model
 
             _ ->
                 model
@@ -253,7 +269,7 @@ renderGame model commandAddress =
         makeNumberButton digitValue =
             let
                 digit =
-                    Char.fromCode ((Char.toCode '0') + digitValue)
+                    Char.fromCode (zeroDigitKeyCode + digitValue)
 
                 digitString =
                     toString digitValue
