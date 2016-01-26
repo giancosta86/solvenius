@@ -40,7 +40,7 @@ Wrong input sequences will give you clues on the actual secret sequence; every d
 
 * *yellow* (and *underlined*) if it is in the secret sequence, but in another position
 
-* *red* (and *stricken-through*) if it is not in the secret sequence
+* *red* (and *stricken-through*, in *italic* style) if it is not in the secret sequence
 
 
 Inferring the right sequence will make you earn points (the quicker you are, the more points you'll receive) and further time.

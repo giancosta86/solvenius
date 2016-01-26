@@ -43,7 +43,7 @@
   margin-top: 1em;
   margin-bottom: 1em;
 
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
 
   background: lightyellow;
@@ -53,6 +53,12 @@
   list-style-type: none;
 
   overflow-y: scroll;
+
+  font-weight: bolder;
+
+  border-radius: 0.5em;
+
+  font-family: monospace;
 }
 
 
@@ -82,6 +88,11 @@
 .digitWrong {
   color: #d23939;
   text-decoration: line-through;
+  font-style: italic;
+
+  -moz-text-decoration-style: double;
+  -webkit-text-decoration-style: double;
+  text-decoration-style: double;
 }
 
 
