@@ -41,6 +41,11 @@ The game is fairly straightforward - but you can find detailed instructions in t
   * Last but not least, Solvenius 3 is based on a radically new development paradigm: functional programming! ^\_\_^
 
 
+* **"Solvenius" - what does that mean?**
+
+  *Solvenius* is a contraction of *solving genius* - focusing on the deductive nature of the game and the fact that everyone can master its mechanics by applying inferential reasoning! ^\_\_^
+
+
 * **What about the top score ladder?**
 
   Solvenius is now open source and cannot store secret credentials to cloud services - therefore, for simplicity, the online top score ladder has been replaced by your current top score on the browser - which is backed by HTML 5 storage.
