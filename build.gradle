@@ -23,14 +23,14 @@ version = "3.3"
 
 task clean(type: Delete) {
   delete project.buildDir
-  delete "elm.js"
+  delete "app.js"
   delete "elm-stuff"
 }
 
 
 task compileElm(type: Exec) {
     executable = "${System.getenv('ELM_HOME')}/elm-make"
-    args = ["--yes", "--warn", "Main.elm", "--output", "elm.js"]
+    args = ["--yes", "--warn", "Main.elm", "--output", "app.js"]
 }
 
 
@@ -42,7 +42,7 @@ task('buildWebArchive', type: Zip) {
 
 	from "index.html"
 	from "index.js"
-	from "elm.js"
+	from "app.js"
 	from "favicon.ico"
 
 	into("media") {
