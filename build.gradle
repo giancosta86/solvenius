@@ -2,7 +2,7 @@
   ===========================================================================
   Solvenius
   ===========================================================================
-  Copyright (C) 2001-2016 Gianluca Costa
+  Copyright (C) 2001-2017 Gianluca Costa
   ===========================================================================
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@
 
 description = "Functional reactive HTML 5 logic game"
 
-version = "3.2"
+version = "3.3"
 
 
 task clean(type: Delete) {
@@ -28,10 +28,9 @@ task clean(type: Delete) {
 }
 
 
-task compileElm << {
-  exec {
-    commandLine "elm-make", "--yes", "--warn", "Main.elm", "--output", "elm.js"
-  }
+task compileElm(type: Exec) {
+    executable = "${System.getenv('ELM_HOME')}/elm-make"
+    args = ["--yes", "--warn", "Main.elm", "--output", "elm.js"]
 }
 
 
