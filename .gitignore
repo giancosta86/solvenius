@@ -1,5 +1,5 @@
-.gradle/**
-elm-stuff/**
-build/**
+/.gradle/**
+/elm-stuff/**
+/build/**
 
-elm.js
+/elm.js
