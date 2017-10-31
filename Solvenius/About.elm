@@ -2,7 +2,7 @@
   ===========================================================================
   Solvenius
   ===========================================================================
-  Copyright (C) 2001-2016 Gianluca Costa
+  Copyright (C) 2001-2017 Gianluca Costa
   ===========================================================================
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ view commandAddress =
         ]
         [ h1
             []
-            [ text "Solvenius 3.2"
+            [ text "Solvenius 3.3"
             ]
         , p
             []
@@ -44,7 +44,7 @@ view commandAddress =
             ]
         , p
             []
-            [ text "Copyright © 2001-2016 Gianluca Costa."
+            [ text "Copyright © 2001-2017 Gianluca Costa."
             ]
         , h3
             []
