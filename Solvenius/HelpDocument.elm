@@ -26,7 +26,7 @@ helpContent : Html
 helpContent =
     Markdown.toHtml """
 
-# Online Help
+# Help
 
 **Deduce as many sequences as you can, before the time runs out!**
 
