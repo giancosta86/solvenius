@@ -42,6 +42,9 @@ view commandAddress =
             [ text "Solvenius 3 is an open source HTML 5 game created using Elm, "
             , text "a functional reactive programming language."
             ]
+        , Markdown.toHtml """
+The [Android version](https://play.google.com/store/apps/details?id=info.gianlucacosta.solvenius) is written in Kotlin and embeds the HTML 5 version via a thin layer of JavaScript bridges.
+"""
         , p
             []
             [ text "Copyright © 2001-2017 Gianluca Costa."
