@@ -18,35 +18,6 @@
   ===========================================================================
 */
 
-@media (orientation: landscape)  {
-  #appBox {
-    position: absolute;
-    left: 30%;
-    width: 40%;
-
-    top: 0;
-    min-height: 100%;
-  }
-}
-
-
-
-@media (orientation: portrait)  {
-  body {
-    font-size: 50px;
-  }
-
-
-  #appBox {
-    position: absolute;
-    left: 0;
-    width: 100%;
-
-    top: 0;
-    min-height: 100%;
-  }
-
-  #titleStage h1 {
-    font-size: 2.5em;
-  }
+#helpStage #backButton {
+    margin-top: 1em;
 }
