@@ -36,9 +36,14 @@ description = "Functional reactive HTML 5 logic game"
 version = "3.4"
 
 
+task cleanOutput(type: Delete) {
+    delete project.buildDir
+    delete "app.js"
+}
+
+
 task clean(type: Delete) {
-  delete project.buildDir
-  delete "app.js"
+  dependsOn(cleanOutput)
   delete "elm-stuff"
 }
 
