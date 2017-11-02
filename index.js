@@ -76,6 +76,12 @@ function playMusic() {
 }
 
 
+function pauseMusic() {
+  var musicPlayer = document.getElementById("musicPlayer")
+  musicPlayer.pause()
+}
+
+
 function hideLoadingBox() {
   var loadingBox = document.getElementById("loadingBox")
 
