@@ -55,7 +55,7 @@ view model commandAddress =
             [ text "Reset"
             ]
         , button
-            [ onClick commandAddress BackToTitle
+            [ id "backButton", onClick commandAddress BackToTitle
             ]
             [ text "Back"
             ]

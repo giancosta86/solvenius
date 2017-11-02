@@ -35,7 +35,7 @@ view commandAddress =
         ]
         [ h1
             []
-            [ text "Solvenius 3.3"
+            [ text "Solvenius 3.4"
             ]
         , p
             []
@@ -69,7 +69,7 @@ Licensed under Creative Commons: By Attribution 3.0 License
             [ text "Solvenius on Facebook"
             ]
         , button
-            [ onClick commandAddress BackToTitle
+            [ id "backButton", onClick commandAddress BackToTitle
             ]
             [ text "Back"
             ]

@@ -129,3 +129,15 @@ function openGithubPage() {
 
   window.open(gitHubProjectUrl, "_blank");
 }
+
+
+function tryToGoBack() {
+  var backButton = document.getElementById("backButton")
+
+  if (backButton) {
+    backButton.click()
+    return "OK"
+  } else {
+    return null
+  }
+}

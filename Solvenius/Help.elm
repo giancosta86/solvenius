@@ -35,7 +35,7 @@ view commandAddress =
         ]
         [ helpContent
         , button
-            [ onClick commandAddress BackToTitle
+            [ id "backButton", onClick commandAddress BackToTitle
             ]
             [ text "Back"
             ]

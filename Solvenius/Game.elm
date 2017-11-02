@@ -334,7 +334,7 @@ renderGame model commandAddress =
                 , timeLabel model.secondsToPlay
                 ]
             , button
-                [ onClick commandAddress (BackToTitle model.score)
+                [ id "backButton", onClick commandAddress (BackToTitle model.score)
                 ]
                 [ text "Leave game"
                 ]
@@ -425,7 +425,7 @@ renderGameOver model commandAddress =
             [ text (toString model.score)
             ]
         , button
-            [ onClick commandAddress (BackToTitle model.score)
+            [ id "backButton", onClick commandAddress (BackToTitle model.score)
             ]
             [ text "Back"
             ]
