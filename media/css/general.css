@@ -44,7 +44,7 @@ body {
   padding-top: 2em;
   padding-bottom: 1.5em;
 
-  background-image: linear-gradient(to bottom, #ffc151, #fff99a);
+  background: linear-gradient(to bottom, #ffc151, #fff99a);
 
   display: flex;
   flex-direction: column;
@@ -64,11 +64,7 @@ h1 {
 
 button {
   background: #f23030;
-  background-image: -webkit-linear-gradient(top, #f8c077, #e88607, #f8c077);
-  background-image: -moz-linear-gradient(top, #f8c077, #e88607, #f8c077);
-  background-image: -ms-linear-gradient(top, #f8c077, #e88607, #f8c077);
-  background-image: -o-linear-gradient(top, #f8c077, #e88607, #f8c077);
-  background-image: linear-gradient(to bottom, #f8c077, #e88607, #f8c077);
+  background: linear-gradient(to bottom, #f8c077, #e88607, #f8c077);
 
   border-radius: 28px;
   color: #ffff95;
@@ -77,4 +73,13 @@ button {
 
   font-weight: bold;
   padding: 0.8em;
+}
+
+
+#aboutStage h1,
+#helpStage h1,
+#topScoreStage h1 {
+  color: #d97f09;
+  border-bottom: 2px solid #d97f09;
+  padding-bottom: 0.5em;
 }
