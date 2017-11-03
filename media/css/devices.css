@@ -43,17 +43,14 @@
 }
 
 
-
-@media (orientation: portrait) and (resolution: 1dppx) {
-   body {
-    font-size: 2em;
-  }
+@media (orientation: portrait) and (max-device-width: 420px) {
+    body {
+        font-size: 4.5vw;
+    }
 }
 
-
-
-@media (orientation: portrait) and (resolution: 2dppx) {
-   body {
-    font-size: 3em;
-  }
+@media (orientation: portrait) and (min-device-width: 420px) {
+    body {
+        font-size: 3.5vw;
+    }
 }
