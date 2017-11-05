@@ -45,12 +45,12 @@
 
 @media (orientation: portrait) and (max-device-width: 420px) {
     body {
-        font-size: 4.5vh;
+        font-size: 4.5vw;
     }
 }
 
 @media (orientation: portrait) and (min-device-width: 420px) {
     body {
-        font-size: 3.5vh;
+        font-size: 3.5vw;
     }
 }
