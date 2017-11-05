@@ -67,7 +67,7 @@ button {
   background: #f23030;
   background: linear-gradient(to bottom, #f8c077, #e88607, #f8c077);
 
-  border-radius: 28px;
+  border-radius: 1.3em;
   color: #ffff95;
   font-size: 1em;
   text-decoration: none;
