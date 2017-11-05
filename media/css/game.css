@@ -104,7 +104,8 @@
 }
 
 
-button.digitButton {
+.digitButton {
+  border-radius: 0.6em;
   font-weight: bold;
 
   min-width: 2.3em;
