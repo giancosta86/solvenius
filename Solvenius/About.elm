@@ -35,7 +35,7 @@ view commandAddress =
         ]
         [ h1
             []
-            [ text "Solvenius 3.4"
+            [ text "Solvenius 3.5"
             ]
         , p
             []

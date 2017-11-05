@@ -43,14 +43,8 @@
 }
 
 
-@media (orientation: portrait) and (max-device-width: 420px) {
+@media (orientation: portrait) {
     body {
         font-size: 4.5vmin;
-    }
-}
-
-@media (orientation: portrait) and (min-device-width: 420px) {
-    body {
-        font-size: 3.5vmin;
     }
 }

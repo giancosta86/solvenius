@@ -11424,7 +11424,7 @@ Elm.Solvenius.About.make = function (_elm) {
    var view = function (commandAddress) {
       return A2($Html.div,
       _U.list([$Html$Attributes.id("aboutStage")]),
-      _U.list([A2($Html.h1,_U.list([]),_U.list([$Html.text("Solvenius 3.4")]))
+      _U.list([A2($Html.h1,_U.list([]),_U.list([$Html.text("Solvenius 3.5")]))
               ,A2($Html.p,
               _U.list([]),
               _U.list([$Html.text("Solvenius 3 is an open source HTML 5 game created using Elm, "),$Html.text("a functional reactive programming language.")]))
