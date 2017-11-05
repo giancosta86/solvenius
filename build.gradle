@@ -37,6 +37,7 @@ version = "3.5"
 
 
 task cleanOutput(type: Delete) {
+    delete "elm-stuff/build-artifacts/0.16.0/giancosta86/solvenius/"
     delete project.buildDir
     delete "app.js"
 }
@@ -87,4 +88,8 @@ moonLicense {
         inceptionYear = 2001
         copyrightHolder = "Gianluca Costa"
     }
+
+    excludes += [
+        "elm-stuff/.*"
+    ]
 }
