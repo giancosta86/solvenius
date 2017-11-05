@@ -11,6 +11,8 @@ About fifteen years later, I discovered [Elm](http://elm-lang.org/), a functiona
 
 This new version of Solvenius employs not only Elm, but also CSS 3 (especially the brilliant *flex* layout and *media queries*), to further decouple model and view and dramatically increase portability.
 
+A dedicated Android app is also available on [Google Play](https://play.google.com/store/apps/details?id=info.gianlucacosta.solvenius) - with source code on [GitHub](https://github.com/giancosta86/Solvenius-android).
+
 I hope you will enjoy this latest version of Solvenius! ^\_\_^
 
 
@@ -46,11 +48,6 @@ The game is fairly straightforward - but you can find detailed instructions in t
   *Solvenius* is a contraction of *solving genius* - focusing on the deductive nature of the game and the fact that everyone can master its mechanics by applying inferential reasoning! ^\_\_^
 
 
-* **What about the top score ladder?**
-
-  Solvenius is now open source and cannot store secret credentials to cloud services - therefore, for simplicity, the online top score ladder has been replaced by your current top score on the browser - which is backed by HTML 5 storage.
-
-
 ## Music credits
 
   * "Winner Winner!" Kevin MacLeod (incompetech.com) Licensed under Creative Commons: By Attribution 3.0 License http://creativecommons.org/licenses/by/3.0/
@@ -78,6 +75,8 @@ The author would like to thank - in order by surname:
 
 
 ## Further references
+
+* [Solvenius for Android](https://github.com/giancosta86/Solvenius-android)
 
 * [Elm programming language](http://elm-lang.org/)
 
