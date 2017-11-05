@@ -60,15 +60,17 @@ The game is fairly straightforward - but you can find detailed instructions in t
 
 The author would like to thank - in order by surname:
 
-* *Massimiliano Corsini*: for testing both the HTML 5 and the Android version
+* *Massimiliano Corsini*: for his valuable testing of both the HTML 5 and the Android version
 
 * *Alberto La Mantia*: for suggesting that game clues on sequence attempts should employ not only colors but also other visual elements
 
 * *Kevin MacLeod* (incompetech.com): for the excellent soundtrack
 
-* *Salvatore Munaò*: for testing both the HTML 5 and the Android version
+* *Salvatore Munaò*: for his valuable testing of both the HTML 5 and the Android version
 
 * *Ivano Pagano*: for suggesting keyboard input support
+
+* *Carmen Squillaci*: for her valuable testing and suggestions on the Android version
 
 * *Paolo Tagliapietra*: for his suggestions and infrastructural support for an older major version (Solvenius 2)
 
