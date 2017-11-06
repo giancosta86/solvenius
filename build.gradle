@@ -80,6 +80,25 @@ task build {
 }
 
 
+task deployToAndroidProject {
+    dependsOn(compileElm)
+
+    def solveniusAssetsDir =
+        "${projectDir}/../Solvenius-android/app/src/main/assets/solvenius"
+
+    delete solveniusAssetsDir
+
+    copy {
+        from projectDir
+        into solveniusAssetsDir
+        include '*.html'
+        include '*.js'
+        include 'favicon.ico'
+        include 'media/**'
+    }
+}
+
+
 moonLicense {
     license = apache2
 
