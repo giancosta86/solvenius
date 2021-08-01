@@ -87,15 +87,17 @@ parseRoute url =
         |> Maybe.withDefault NotFound
 
 
-
-
 routeParser : Parser (Route -> a) a
 routeParser =
+    let
+        rootPath path =
+            s siteRoot </> s path
+    in
     oneOf
         [ map Home <| s siteRoot
-        , map Game <| s siteRoot </> s game
-        , map Settings <| s siteRoot </> s settings
-        , map TopScore <| s siteRoot </> s topScore
-        , map Help <| s siteRoot </> s help
-        , map About <| s siteRoot </> s about
+        , map Game <| rootPath game
+        , map Settings <| rootPath settings
+        , map TopScore <| rootPath topScore
+        , map Help <| rootPath help
+        , map About <| rootPath about
         ]
