@@ -7,6 +7,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  overscroll-behavior: none;
 }
 
 $defaultColor: rgb(1, 51, 1);
