@@ -11,6 +11,8 @@ module.exports = merge(common, {
 
     overlay: true,
 
-    host: "0.0.0.0"
+    host: "0.0.0.0",
+
+    publicPath: '/solvenius/'
   }
 });

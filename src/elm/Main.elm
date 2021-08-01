@@ -114,10 +114,10 @@ loadUrl url model =
         nextMusic =
             case nextRouteState of
                 InGame _ ->
-                    Just "/game.mp3"
+                    Just "game.mp3"
 
                 _ ->
-                    Just "/title.mp3"
+                    Just "title.mp3"
 
         nextModel =
             { model

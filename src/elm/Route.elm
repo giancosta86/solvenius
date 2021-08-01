@@ -14,6 +14,9 @@ type Route
     | NotFound
 
 
+siteRoot: String
+siteRoot = "solvenius"
+
 getPath : Route -> String
 getPath route =
     let
@@ -40,7 +43,7 @@ getPath route =
                 NotFound ->
                     notFound
     in
-    "/" ++ routeString
+        ["/", siteRoot, "/", routeString] |> String.join "" 
 
 
 home : String
@@ -84,13 +87,15 @@ parseRoute url =
         |> Maybe.withDefault NotFound
 
 
+
+
 routeParser : Parser (Route -> a) a
 routeParser =
     oneOf
-        [ map Home top
-        , map Game <| s game
-        , map Settings <| s settings
-        , map TopScore <| s topScore
-        , map Help <| s help
-        , map About <| s about
+        [ map Home <| s siteRoot
+        , map Game <| s siteRoot </> s game
+        , map Settings <| s siteRoot </> s settings
+        , map TopScore <| s siteRoot </> s topScore
+        , map Help <| s siteRoot </> s help
+        , map About <| s siteRoot </> s about
         ]

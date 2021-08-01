@@ -77,8 +77,8 @@ module.exports = {
         appleStatusBarStyle: "black-translucent",
         display: "fullscreen",
         orientation: "portrait",
-        scope: "/",
-        start_url: "/",
+        scope: "/solvenius/",
+        start_url: "/solvenius/",
         version: pkg.version,
 
         icons: {

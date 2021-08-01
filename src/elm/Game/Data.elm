@@ -219,7 +219,7 @@ updateOnPerfectMatch model =
       }
     , Cmd.batch
         [ generateExpectedSequence nextExpectedLength
-        , Audio.playSound "/perfectMatch.mp3"
+        , Audio.playSound "perfectMatch.mp3"
         ]
     )
 
