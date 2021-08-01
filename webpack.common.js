@@ -38,7 +38,7 @@ module.exports = {
   entry: "./src/ts/main.ts",
 
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "dist", "solvenius"),
     filename: "solvenius.[contenthash].js"
   },
 

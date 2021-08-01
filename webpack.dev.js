@@ -7,7 +7,9 @@ module.exports = merge(common, {
   devtool: "inline-source-map",
 
   devServer: {
-    historyApiFallback: true,
+    historyApiFallback: {
+      rewrites: [{ from: /^\/solvenius\/.+/, to: "/solvenius/" }]
+    },
 
     overlay: true,
 
