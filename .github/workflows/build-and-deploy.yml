@@ -1,0 +1,26 @@
+name: Build and deploy
+
+on:
+  push:
+    branches: [v4]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.4.4
+        with:
+          node-version: "15.0.1"
+
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist

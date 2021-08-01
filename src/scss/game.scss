@@ -1,0 +1,104 @@
+.page.game {
+  .info {
+    width: 50%;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    display: flex;
+
+    & > * {
+      flex: 1;
+    }
+
+    .timeLabel {
+      text-align: right;
+    }
+  }
+
+  .sequenceDisplay {
+    background: rgb(255, 243, 137);
+    text-align: center;
+    width: 50%;
+    font-size: 1.75em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    font-family: monospace;
+    border-radius: 0.5em;
+  }
+
+  .attemptsArea {
+    flex: 1;
+    width: 50%;
+    background: white;
+    overflow-y: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: monospace;
+    font-size: 1.5em;
+    line-height: 1.75em;
+    padding: 0.25em;
+    text-align: center;
+    border-radius: 0.5em;
+
+    .attemptRow {
+      * {
+        margin-right: 1em;
+      }
+
+      *:last-child {
+        margin-right: 0;
+      }
+
+      .matching {
+        color: green;
+      }
+
+      .misplaced {
+        text-decoration: underline;
+        color: darkgoldenrod;
+      }
+
+      .unused {
+        text-decoration: line-through;
+        color: darkred;
+      }
+    }
+  }
+
+  .sequenceButtonsBox {
+    margin: 0.25em;
+    border-radius: 0.5em;
+
+    & > div:last-child {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .sequenceButton {
+      display: inline-flex;
+      padding: 0.15em;
+      margin: 0.15em;
+      width: 2.75em;
+      height: 2.75em;
+      background: #054e05;
+      color: yellow;
+      border-radius: 0.5em;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .controlButtonsBox {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1em;
+
+    & > .button {
+      flex: 1;
+    }
+  }
+}

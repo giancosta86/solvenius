@@ -1,0 +1,25 @@
+@media all and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+
+  .page.home {
+    .links {
+      width: 100%;
+    }
+  }
+
+  .page.game {
+    .info {
+      width: 75%;
+    }
+
+    .sequenceDisplay {
+      width: 75%;
+    }
+
+    .attemptsArea {
+      width: 75%;
+    }
+  }
+}

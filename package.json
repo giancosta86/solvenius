@@ -1,0 +1,38 @@
+{
+  "name": "solvenius",
+  "version": "4.0.0-beta1",
+  "description": "Logic game in modern Elm",
+  "private": true,
+  "scripts": {
+    "test": "elm-test",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "yarn test && webpack --config webpack.prod.js",
+    "start:dist": "http-server dist -o -a 0.0.0.0"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.1.0",
+    "elm": "0.19.1-5",
+    "elm-format": "^0.8.5",
+    "elm-test": "^0.19.1-revision7",
+    "elm-webpack-loader": "^8.0.0",
+    "favicons": "^6.2.2",
+    "favicons-webpack-plugin": "^5.0.2",
+    "html-webpack-plugin": "^5.3.2",
+    "http-server": "^0.12.3",
+    "prettier": "^2.3.2",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.1.0",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.1.5"
+  }
+}
