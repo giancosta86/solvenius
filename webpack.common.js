@@ -83,7 +83,7 @@ module.exports = {
 
         icons: {
           android: true,
-          appleIcon: false,
+          appleIcon: true,
           appleStartup: false,
           coast: false,
           favicons: true,
