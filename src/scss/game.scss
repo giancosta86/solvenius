@@ -85,6 +85,10 @@
       cursor: pointer;
       justify-content: center;
       align-items: center;
+
+      &:hover {
+        background: #1a611a;
+      }
     }
   }
 
