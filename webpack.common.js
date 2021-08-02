@@ -68,8 +68,6 @@ module.exports = {
         appName: "Solvenius",
         appShortName: "Solvenius",
         appDescription: pkg.description,
-        developerName: "Gianluca Costa",
-        developerURL: "https://gianlucacosta.info/",
         dir: "auto",
         lang: "en-US",
         background: "#fff",
