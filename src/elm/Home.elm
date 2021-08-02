@@ -24,8 +24,8 @@ view () =
             [ h1 [] [ text "Solvenius 4" ]
             , div [ class "links" ]
                 [ buttonLink Route.Game [] "▶️ Play!"
-                , buttonLink Route.Settings [] "⚙️ Settings"
                 , buttonLink Route.TopScore [] "🏆 Top score"
+                , buttonLink Route.Settings [] "⚙️ Settings"                
                 , buttonLink Route.Help [] "❓ Help"
                 , buttonLink Route.About [] "ℹ️ About..."
                 ]
