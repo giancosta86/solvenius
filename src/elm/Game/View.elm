@@ -136,7 +136,7 @@ stopRequestScreen _ =
 
 pauseScreen : List (Html Msg)
 pauseScreen =
-    [ h1 [] [ text "The game is paused! ^__^" ]
+    [ h1 [] [ text "Game paused" ]
     , div [ onClick Resume, asButton ] [ text "▶️ Resume" ]
     ]
 

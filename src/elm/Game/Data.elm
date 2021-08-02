@@ -70,12 +70,12 @@ init : Score -> ( Model, Cmd Msg )
 init topScore =
     let
         initialModel =
-            { expectedLength = 9
+            { expectedLength = 2
             , expectedSequence = []
             , userSequence = []
             , attemptsForSequence = []
             , millisForSequence = 0
-            , remainingMillis = 3000000
+            , remainingMillis = 30000
             , latestTickMillis = Nothing
             , solvedSequencesOfExpectedLength = 0
             , topScore = topScore
