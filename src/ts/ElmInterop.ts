@@ -16,7 +16,7 @@ export class ElmApp {
     if (appNode) {
       actualAppNode = appNode;
     } else {
-      actualAppNode = appNode ?? document.createElement("div");
+      actualAppNode = document.createElement("div");
       document.body.append(actualAppNode);
     }
 
