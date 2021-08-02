@@ -45,7 +45,7 @@ digitButton digit =
 popDigitButton : Html Msg
 popDigitButton =
     "<"
-        |> sequenceButton [ onClick PopDigit ] 
+        |> sequenceButton [ onClick PopDigit ]
 
 
 sequenceButtonsBox : Html Msg
@@ -115,13 +115,15 @@ playingScreen : Model -> List (Html Msg)
 playingScreen model =
     [ div [ class "info" ]
         [ span [] [ "Score: " ++ Score.toString model.score |> text ]
-        , span [ class "timeLabel" ] 
-            [ text ("Time: " ++ (
-                Timing.formatMillis model.remainingMillis 
-                    |> Result.toMaybe 
-                    |> Maybe.withDefault ""
+        , span [ class "timeLabel" ]
+            [ text
+                ("Time: "
+                    ++ (Timing.formatMillis model.remainingMillis
+                            |> Result.toMaybe
+                            |> Maybe.withDefault ""
+                       )
                 )
-            )]
+            ]
         ]
     , sequenceDisplay model.expectedLength model.userSequence
     , attemptsArea model.attemptsForSequence
@@ -152,8 +154,8 @@ gameOverScreen : Model -> List (Html Msg)
 gameOverScreen model =
     [ h1 [] [ text "Game over!" ]
     , div []
-        [ div [] [ "Your score is: " ++ String.fromInt model.score |> text ]
-        , div []
+        [ h3 [] [ "Your score is: " ++ String.fromInt model.score |> text ]
+        , h3 []
             [ (if model.score > model.topScore then
                 "🌟 New top score! 🌟"
 
