@@ -21,7 +21,7 @@ view () =
     { title = "Solvenius - Page not found"
     , body =
         [ page [ class "notFound" ]
-            [ div [] [ text "O__o You have requested a missing page" ]
+            [ div [] [ text "O__o You have requested a missing page!" ]
             , buttonLink Route.Home [] "🏠 Home"
             ]
         ]
