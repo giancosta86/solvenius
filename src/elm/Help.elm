@@ -28,8 +28,8 @@ view () =
                 , li [] [ text "YELLOW (and underlined) if it is in the secret sequence, but in another position" ]
                 , li [] [ text "RED (and stricken-through) if it is not in the secret sequence" ]
                 ]
-            , p [] [ text "Inferring the right sequence will make you earn points (the quicker you are, the more points you'll receive) and further time." ]
-            , p [] [ text "There are no limits on the number of attempts you can perform; but time flows, making the game end as the countdown reaches 0." ]
+            , p [] [ text "You will earn points - and even additional time - by inferring the right sequence: the quicker you are, the more points you receive." ]
+            , p [] [ text "There are no limits on the number of attempts you can perform; but the time flows, making the game end as soon as the countdown reaches 0." ]
             ]
         ]
     }
