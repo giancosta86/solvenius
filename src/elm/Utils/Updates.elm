@@ -1,4 +1,4 @@
-module Utils.Updates exposing (..)
+module Utils.Updates exposing (pipeUpdate)
 
 
 type alias UpdateResult msg model =
