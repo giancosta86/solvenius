@@ -11,7 +11,7 @@ body {
 }
 
 $defaultColor: rgb(1, 51, 1);
-$buttonColor: rgb(17, 85, 14);
+$buttonColor: rgb(9, 54, 7);
 $containerBackground: rgb(144, 245, 144);
 
 .container {
@@ -86,7 +86,8 @@ li {
   box-shadow: 2px 2px rgb(67, 170, 67);
 
   &:hover {
-    background: rgb(48, 173, 48);
+    background: rgb(84, 179, 84);
+    box-shadow: 2px 2px rgb(156, 233, 156);
   }
 }
 .page {
