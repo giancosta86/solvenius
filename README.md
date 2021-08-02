@@ -6,7 +6,7 @@ _Logic game in modern Elm_
 
 Twenty years ago, in 2001, I created the very first version of Solvenius: it was a simple videogame, written in Visual Basic 6, but it still contained most of the game dynamics - in particular, the user had to deduce sequences of digits, à la Mastermind.
 
-About fifteen years later, I discovered [Elm](https://elm-lang.org/), a very elegant functional programming language: after the initial challenges due to the new paradigm, I was definitely excited about the well-structured nature of the Elm architecture, so I wanted to try it on a project I knew very well - why not Solvenius?
+About fifteen years later, I discovered [Elm](https://elm-lang.org/), a sublime functional programming language: after the initial challenges due to the new paradigm, I was definitely excited about the well-structured nature of the Elm architecture, so I wanted to try it on a project I knew very well - so, why not Solvenius?
 
 Solvenius 3, which I published in January 2016, was an invaluable breakthrough - which even inspired later projects like [EighthBridge](https://github.com/giancosta86/EighthBridge); however:
 
@@ -16,7 +16,7 @@ Solvenius 3, which I published in January 2016, was an invaluable breakthrough -
 
 Solvenius 4 addresses the above points:
 
-- package dependencies are ensured by Yarn and Elm, while the build process - from code to website - is defined via a GitHub Actions pipeline
+- package dependencies are ensured by Yarn and Elm, while the build process - from code to website - runs via _Webpack_ and _GitHub Actions_
 
 - the code is written in modern, _message-based_ Elm - after 5 years of courses and experience in the domain of functional/hybrid programming; part of the app is also in _TypeScript_ - and the two languages are elegantly mixed by _Webpack_
 
@@ -41,21 +41,25 @@ The game is fairly straightforward - but you can find detailed instructions in t
   Solvenius 4 introduces the following technical enhancements:
 
   - **Portable Web Application** (PWA) - to make the game compatible with a wider range of devices, and to make it available even when the user is not connected to the Internet
+
   - Far more elegant codebase, rewritten in **modern Elm**
+
   - **Enhanced user interface**:
+
     - Multiple background music tracks
     - Sounds
     - Game pausing
     - Confirmation messages before exiting the game
     - Path-based page routing - which enables bookmarks to specific pages
+
   - Browser integration (e.g.: multimedia, local storage) via a thin layer of **TypeScript** code
   - **Webpack** to unify the two different languages into a single JavaScript bundle
   - **Tests**, to check the core parts of the game engine
-  - Simple and elegant **build process**, supported by _Yarn_ and _GitHub Actions_
+  - Simple and elegant **build process**, supported by _Yarn_, _Webpack_ and _GitHub Actions_
 
 - **"Solvenius" - what does that mean?**
 
-  _Solvenius_ is short for _solving genius_ - focusing on the deductive nature of the game and the fact that everyone can master its mechanics by applying inferential reasoning! ^\_\_^
+  _Solvenius_ is short for _solving genius_ - focusing on the deductive nature of the game and the fact that everyone can master its mechanics by applying logic! ^\_\_^
 
 ## Audio credits
 
@@ -99,12 +103,12 @@ The author would like to thank - in order by surname:
 
 ## Further references
 
-- [Elm programming language](http://elm-lang.org/)
+- [Elm programming language](https://elm-lang.org/)
 
 - [Beginning Elm](https://elmprogramming.com/)
 
 - [HTML 5](https://www.w3.org/TR/html5/)
 
-- [CSS 3](http://www.css3.info/)
+- [CSS 3](https://www.css3.info/)
 
 - [Media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
