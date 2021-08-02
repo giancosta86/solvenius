@@ -1,16 +1,28 @@
 {
   "name": "solvenius",
-  "version": "4.0.0-beta2",
+  "version": "4.0.0-beta3",
   "description": "Logic game in modern Elm",
   "private": true,
   "scripts": {
     "test": "elm-test",
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "yarn test && webpack --config webpack.prod.js",
-    "start:dist": "http-server dist -o -a 0.0.0.0"
+    "start:dist": "http-server dist -o /solvenius/ -a 0.0.0.0"
   },
-  "author": "",
+  "author": {
+    "name": "Gianluca Costa",
+    "url": "https://gianlucacosta.info/",
+    "email": "gianluca@gianlucacosta.info"
+  },
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giancosta86/solvenius"
+  },
+  "homepage": "https://gianlucacosta.info/solvenius",
+  "bugs": {
+    "url": "https://github.com/giancosta86/solvenius/issues"
+  },
   "devDependencies": {
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
