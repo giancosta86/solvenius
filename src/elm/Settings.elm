@@ -27,7 +27,7 @@ view model =
     { title = "Solvenius - Settings"
     , body =
         [ page [ class "settings" ]
-            [ div [ checked model.musicEnabled, onClick FlipMusic, asButton ]
+            [ div [ onClick FlipMusic, asButton ]
                 [ text
                     (if model.musicEnabled then
                         "🔊🎶 Music is on"
@@ -36,7 +36,7 @@ view model =
                         "🔇🎶 Music is off"
                     )
                 ]
-            , div [ checked model.soundsEnabled, onClick FlipSounds, asButton ]
+            , div [ onClick FlipSounds, asButton ]
                 [ text
                     (if model.soundsEnabled then
                         "🔊🔔 Sounds are on"
