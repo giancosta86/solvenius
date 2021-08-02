@@ -73,6 +73,12 @@ The game is fairly straightforward - but you can find detailed instructions in t
 
 **NOTE**: the original audio files have been compressed when creating the game.
 
+## Special thanks (for Solvenius 4)
+
+The author would like to thank:
+
+- _Marco Mengoli_ and _Elisa Bruzzi_: for testing this new release on iPhone, as well as for providing hyper-valuable feedback
+
 ## Special thanks (for the legacy version 3)
 
 The author would like to thank - in order by surname:
