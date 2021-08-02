@@ -31,7 +31,7 @@ sequenceDisplay expectedLength userSequence =
 sequenceButton : List (Html.Attribute Msg) -> String -> Html Msg
 sequenceButton attributes label =
     div
-        (class "sequenceButton" :: class "button" :: attributes)
+        (class "sequenceButton" :: asButton :: attributes)
         [ span [] [ label |> text ]
         ]
 
@@ -44,7 +44,8 @@ digitButton digit =
 
 popDigitButton : Html Msg
 popDigitButton =
-    sequenceButton [ onClick PopDigit ] "<"
+    "<"
+        |> sequenceButton [ onClick PopDigit ] 
 
 
 sequenceButtonsBox : Html Msg
@@ -75,7 +76,7 @@ attemptRow attempt =
                 |> String.toLower
 
         digitSpan ( digit, status ) =
-            span [ class "digitSpan", cssClass status |> class ] [ digit |> Digit.toString |> text ]
+            span [ cssClass status |> class ] [ digit |> Digit.toString |> text ]
     in
     List.map digitSpan attempt
         |> div [ class "attemptRow" ]
@@ -114,7 +115,13 @@ playingScreen : Model -> List (Html Msg)
 playingScreen model =
     [ div [ class "info" ]
         [ span [] [ "Score: " ++ Score.toString model.score |> text ]
-        , span [ class "timeLabel" ] [ text ("Time: " ++ (Timing.formatMillis model.remainingMillis |> Result.toMaybe |> Maybe.withDefault "")) ]
+        , span [ class "timeLabel" ] 
+            [ text ("Time: " ++ (
+                Timing.formatMillis model.remainingMillis 
+                    |> Result.toMaybe 
+                    |> Maybe.withDefault ""
+                )
+            )]
         ]
     , sequenceDisplay model.expectedLength model.userSequence
     , attemptsArea model.attemptsForSequence
@@ -148,7 +155,7 @@ gameOverScreen model =
         [ div [] [ "Your score is: " ++ String.fromInt model.score |> text ]
         , div []
             [ (if model.score > model.topScore then
-                "New top score!"
+                "🌟 New top score! 🌟"
 
                else
                 ""
