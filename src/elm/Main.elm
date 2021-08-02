@@ -36,8 +36,8 @@ type alias Flags =
 type RouteState
     = InHome
     | InGame Game.Data.Model
-    | InSettings
     | InTopScore
+    | InSettings
     | InHelp
     | InAbout
     | InNotFound
@@ -56,8 +56,8 @@ type alias Model =
 type Msg
     = HomeMsg Home.Msg
     | GameMsg Game.Data.Msg
-    | SettingsMsg Settings.Msg
     | TopScoreMsg TopScore.Msg
+    | SettingsMsg Settings.Msg
     | HelpMsg Help.Msg
     | AboutMsg About.Msg
     | NotFoundMsg NotFound.Msg
@@ -96,11 +96,11 @@ loadUrl url model =
                     Game.Data.init model.topScore
                         |> Tuple.mapBoth InGame (Cmd.map GameMsg)
 
-                Route.Settings ->
-                    ( InSettings, Cmd.none )
-
                 Route.TopScore ->
                     ( InTopScore, Cmd.none )
+
+                Route.Settings ->
+                    ( InSettings, Cmd.none )
 
                 Route.Help ->
                     ( InHelp, Cmd.none )
@@ -185,12 +185,6 @@ handleMsgGlobally msg model =
         UrlRequested (External href) ->
             ( model, Nav.load href )
 
-        SettingsMsg Settings.FlipMusic ->
-            updateSettings (\settings -> { settings | musicEnabled = not settings.musicEnabled }) model
-
-        SettingsMsg Settings.FlipSounds ->
-            updateSettings (\settings -> { settings | soundsEnabled = not settings.soundsEnabled }) model
-
         TopScoreMsg TopScore.Reset ->
             ( model, TopScore.resetTopScore () )
 
@@ -200,6 +194,12 @@ handleMsgGlobally msg model =
               }
             , Cmd.none
             )
+
+        SettingsMsg Settings.FlipMusic ->
+            updateSettings (\settings -> { settings | musicEnabled = not settings.musicEnabled }) model
+
+        SettingsMsg Settings.FlipSounds ->
+            updateSettings (\settings -> { settings | soundsEnabled = not settings.soundsEnabled }) model
 
         _ ->
             ( model, Cmd.none )
@@ -278,14 +278,14 @@ updateRouteState routeStateConstructor msgConstructor model updatedRouteValues =
         ( routeStateData, routeCmd ) =
             updatedRouteValues
 
-        routeModel =
+        routeState =
             routeStateConstructor routeStateData
 
         cmd =
             Cmd.map msgConstructor routeCmd
 
         updatedModel =
-            { model | routeState = routeModel }
+            { model | routeState = routeState }
     in
     ( updatedModel, cmd )
 
