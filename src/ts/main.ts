@@ -1,19 +1,21 @@
 import { ElmApp } from "./ElmInterop";
 import { LocalStorageVar } from "./LocalStorageVar";
 import { Elm } from "../elm/Main.elm";
+import { ConditionalPlayer } from "./ConditionalPlayer";
 
 import pkg from "../../package.json";
 
 import "../scss/main.scss";
-import { ConditionalPlayer } from "./ConditionalPlayer";
 
 type Score = number;
+
+type Settings = { musicEnabled: boolean; soundsEnabled: boolean };
+
 type Flags = {
   initialTopScore: Score;
   initialSettings: Settings;
   version: string;
 };
-type Settings = { musicEnabled: boolean; soundsEnabled: boolean };
 
 function runApp(): void {
   const topScoreStorage = new LocalStorageVar<Score>("topScore");
@@ -52,12 +54,10 @@ function runApp(): void {
     .listenOnJsPort("saveSettings", (settings: Settings) => {
       musicPlayer.enabled = settings.musicEnabled;
       soundsPlayer.enabled = settings.soundsEnabled;
+      settingsStorage.value = settings;
     })
     .listenOnJsPort("playMusic", (musicPath: string) => {
       musicPlayer.play(musicPath);
-    })
-    .listenOnJsPort("saveSettings", (settings: Settings) => {
-      settingsStorage.value = settings;
     })
     .listenOnJsPort("playSound", (soundPath: string) => {
       soundsPlayer.play(soundPath);
