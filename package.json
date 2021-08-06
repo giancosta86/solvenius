@@ -1,6 +1,6 @@
 {
   "name": "solvenius",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Logic game in modern Elm",
   "private": true,
   "scripts": {
@@ -24,6 +24,7 @@
     "url": "https://github.com/giancosta86/solvenius/issues"
   },
   "devDependencies": {
+    "@types/semver": "^7.3.8",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.1.0",
@@ -46,5 +47,8 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-merge": "^5.8.0",
     "workbox-webpack-plugin": "^6.1.5"
+  },
+  "dependencies": {
+    "semver": "^7.3.5"
   }
 }

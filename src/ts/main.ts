@@ -2,6 +2,7 @@ import { ElmApp } from "./ElmInterop";
 import { LocalStorageVar } from "./LocalStorageVar";
 import { Elm } from "../elm/Main.elm";
 import { ConditionalPlayer } from "./ConditionalPlayer";
+import SemVer from "semver/classes/semver";
 
 import pkg from "../../package.json";
 
@@ -16,6 +17,23 @@ type Flags = {
   initialSettings: Settings;
   version: string;
 };
+
+function checkAppVersion() {
+  const previousVersionStorage = new LocalStorageVar<string>("previousVersion");
+
+  const previousVersion = new SemVer(
+    previousVersionStorage.value ?? pkg.version
+  );
+  const currentVersion = new SemVer(pkg.version);
+
+  if (currentVersion.compare(previousVersion) == 1) {
+    alert(
+      `Solvenius just got an automatic update and is ready to run! ^__^\n\nYour new version: ${currentVersion}`
+    );
+  }
+
+  previousVersionStorage.value = currentVersion.format();
+}
 
 function runApp(): void {
   const topScoreStorage = new LocalStorageVar<Score>("topScore");
@@ -77,5 +95,6 @@ function registerServiceWorker(): void {
   }
 }
 
+checkAppVersion();
 registerServiceWorker();
 runApp();
