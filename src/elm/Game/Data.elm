@@ -239,7 +239,7 @@ additionalScoreOnPerfectMatch expectedLength millisForSequence =
 
 additionalMillisOnPerfectMatch : Int -> Int
 additionalMillisOnPerfectMatch expectedLength =
-    3000 * expectedLength
+    4000 * expectedLength
 
 
 handlePopDigit : Model -> ( Model, Cmd Msg )
