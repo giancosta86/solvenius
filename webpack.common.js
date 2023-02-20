@@ -10,6 +10,7 @@ const WorkboxPlugin = require("workbox-webpack-plugin");
 
 const moduleDirs = [/elm-stuff/, /node_modules/];
 
+const userFriendlyVersion = pkg.version.replace(/\.0/g, "");
 const routes = ["index", "game", "top-score", "settings", "about", "help"];
 
 module.exports = {
@@ -98,6 +99,9 @@ module.exports = {
           title: "Solvenius",
           filename: `${route}.html`,
           meta: {
+            "og:title": `Solvenius ${userFriendlyVersion}`,
+            "og:url": pkg.homepage,
+            "og:description": pkg.description,
             "og:image": `${pkg.homepage}/preview.png`
           }
         })
