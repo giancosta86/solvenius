@@ -1,6 +1,6 @@
 {
   "name": "solvenius",
-  "version": "4.2.0",
+  "version": "4.3.0",
   "description": "Logic game in modern Elm",
   "private": true,
   "scripts": {

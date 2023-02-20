@@ -99,6 +99,7 @@ module.exports = {
           title: "Solvenius",
           filename: `${route}.html`,
           meta: {
+            author: "Gianluca Costa",
             "og:title": `Solvenius ${userFriendlyVersion}`,
             "og:url": pkg.homepage,
             "og:description": pkg.description,
