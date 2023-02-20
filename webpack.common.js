@@ -96,7 +96,10 @@ module.exports = {
       (route) =>
         new HtmlWebpackPlugin({
           title: "Solvenius",
-          filename: `${route}.html`
+          filename: `${route}.html`,
+          meta: {
+            "og:image": "https://gianlucacosta.info/solvenius/preview.png"
+          }
         })
     )
   )
