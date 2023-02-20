@@ -55,7 +55,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new CopyPlugin({
-      patterns: [{ from: "audio", to: "" }]
+      patterns: [{ from: "static", to: "" }]
     }),
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
