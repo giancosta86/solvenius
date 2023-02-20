@@ -100,6 +100,7 @@ module.exports = {
           filename: `${route}.html`,
           meta: {
             author: "Gianluca Costa",
+            version: pkg.version,
             "og:title": `Solvenius ${userFriendlyVersion}`,
             "og:url": pkg.homepage,
             "og:description": pkg.description,
