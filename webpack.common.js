@@ -98,7 +98,7 @@ module.exports = {
           title: "Solvenius",
           filename: `${route}.html`,
           meta: {
-            "og:image": "https://gianlucacosta.info/solvenius/preview.png"
+            "og:image": `${pkg.homepage}/preview.png`
           }
         })
     )
