@@ -101,10 +101,19 @@ module.exports = {
           meta: {
             author: "Gianluca Costa",
             version: pkg.version,
-            "og:title": `Solvenius ${userFriendlyVersion}`,
-            "og:url": pkg.homepage,
-            "og:description": pkg.description,
-            "og:image": `${pkg.homepage}/preview.png`
+            ogTitle: {
+              property: "og:title",
+              content: `Solvenius ${userFriendlyVersion}`
+            },
+            ogUrl: { property: "og:url", content: pkg.homepage },
+            ogDescription: {
+              property: "og:description",
+              content: pkg.description
+            },
+            ogImage: {
+              property: "og:image",
+              content: `${pkg.homepage}/preview.png`
+            }
           }
         })
     )
