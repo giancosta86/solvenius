@@ -54,46 +54,6 @@
       "sizes": "576x857",
       "type": "image/jpeg",
       "label": "Shortcuts"
-    },
-
-    {
-      "src": "../screenshots/Game.jpg",
-      "sizes": "576x857",
-      "type": "image/jpeg",
-      "label": "Game screen",
-      "form_factor": "wide"
-    },
-
-    {
-      "src": "../screenshots/Title.jpg",
-      "sizes": "576x857",
-      "type": "image/jpeg",
-      "label": "Title screen",
-      "form_factor": "wide"
-    },
-
-    {
-      "src": "../screenshots/Settings.jpg",
-      "sizes": "576x857",
-      "type": "image/jpeg",
-      "label": "Settings",
-      "form_factor": "wide"
-    },
-
-    {
-      "src": "../screenshots/Help.jpg",
-      "sizes": "576x857",
-      "type": "image/jpeg",
-      "label": "Online help",
-      "form_factor": "wide"
-    },
-
-    {
-      "src": "../screenshots/Shortcuts.jpg",
-      "sizes": "576x857",
-      "type": "image/jpeg",
-      "label": "Shortcuts",
-      "form_factor": "wide"
     }
   ]
 }
