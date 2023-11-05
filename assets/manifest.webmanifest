@@ -123,7 +123,7 @@
   "shortcuts": [
     {
       "name": "Play!",
-      "url": "game",
+      "url": "../game",
       "description": "Play a game",
       "icons": [
         {
@@ -134,7 +134,7 @@
     },
     {
       "name": "Top score",
-      "url": "top-score",
+      "url": "../top-score",
       "description": "Top score on this device",
       "icons": [
         {
@@ -145,7 +145,7 @@
     },
     {
       "name": "Help",
-      "url": "help",
+      "url": "../help",
       "description": "Online help",
       "icons": [
         {
