@@ -63,6 +63,7 @@ module.exports = {
       skipWaiting: true
     }),
     new FaviconsWebpackPlugin({
+      manifest: "./src/manifest-extra.json",
       logo: "logo.svg",
       logoMaskable: "maskable.svg",
       cache: true,
