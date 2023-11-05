@@ -31,7 +31,7 @@ view model =
                 ]
             , p
                 []
-                [ text "Copyright © 2001-2021 Gianluca Costa."
+                [ text "Copyright © 2001-2023 Gianluca Costa."
                 ]
             , p
                 []
