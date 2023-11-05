@@ -18,5 +18,42 @@
       "description": "Online help",
       "icons": [{ "src": "../shortcuts/help.png", "sizes": "192x192" }]
     }
+  ],
+
+  "screenshots": [
+    {
+      "src": "../screenshots/Game.jpg",
+      "sizes": "576x857",
+      "type": "image/jpeg",
+      "label": "Game screen"
+    },
+
+    {
+      "src": "../screenshots/Title.jpg",
+      "sizes": "576x857",
+      "type": "image/jpeg",
+      "label": "Title screen"
+    },
+
+    {
+      "src": "../screenshots/Settings.jpg",
+      "sizes": "576x857",
+      "type": "image/jpeg",
+      "label": "Settings"
+    },
+
+    {
+      "src": "../screenshots/Help.jpg",
+      "sizes": "576x857",
+      "type": "image/jpeg",
+      "label": "Online help"
+    },
+
+    {
+      "src": "../screenshots/Shortcuts.jpg",
+      "sizes": "380x550",
+      "type": "image/jpeg",
+      "label": "Shortcuts"
+    }
   ]
 }
