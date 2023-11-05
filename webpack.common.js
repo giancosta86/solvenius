@@ -71,7 +71,7 @@ module.exports = {
         appName: "Solvenius",
         appShortName: "Solvenius",
         appDescription:
-          "💡Logic game in modern Elm: guess as many random 🧮digit sequences as you can, before the ⏱️time expires!",
+          "💡Logic game in modern Elm: deduce as many random 🧮digit sequences as you can, before the ⏱️time expires!",
         dir: "auto",
         lang: "en-US",
         background: "#fff",
