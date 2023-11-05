@@ -70,7 +70,8 @@ module.exports = {
       favicons: {
         appName: "Solvenius",
         appShortName: "Solvenius",
-        appDescription: pkg.description,
+        appDescription:
+          "💡Logic game in modern Elm: guess as many random 🧮digit sequences as you can, before the ⏱️time expires!",
         dir: "auto",
         lang: "en-US",
         background: "#fff",
