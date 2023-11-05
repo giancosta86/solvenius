@@ -2,19 +2,19 @@
   "shortcuts": [
     {
       "name": "Play!",
-      "url": "game",
+      "url": "../game",
       "description": "Play a game",
       "icons": [{ "src": "../shortcuts/play.png", "sizes": "192x192" }]
     },
     {
       "name": "Top score",
-      "url": "top-score",
+      "url": "../top-score",
       "description": "Top score on this device",
       "icons": [{ "src": "../shortcuts/top-score.png", "sizes": "192x192" }]
     },
     {
       "name": "Help",
-      "url": "help",
+      "url": "../help",
       "description": "Online help",
       "icons": [{ "src": "../shortcuts/help.png", "sizes": "192x192" }]
     }
