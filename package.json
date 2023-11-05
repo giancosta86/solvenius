@@ -1,6 +1,6 @@
 {
   "name": "solvenius",
-  "version": "4.3.1",
+  "version": "4.4.0",
   "description": "Logic game in modern Elm",
   "private": true,
   "scripts": {
@@ -34,8 +34,8 @@
     "elm-format": "^0.8.5",
     "elm-test": "^0.19.1-revision7",
     "elm-webpack-loader": "^8.0.0",
-    "favicons": "^6.2.2",
-    "favicons-webpack-plugin": "^5.0.2",
+    "favicons": "^7.1.4",
+    "favicons-webpack-plugin": "^6.0.1",
     "html-webpack-plugin": "^5.3.2",
     "http-server": "^0.12.3",
     "prettier": "^2.3.2",
