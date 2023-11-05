@@ -64,7 +64,6 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: "logo.svg",
-      logoMaskable: "logo.svg",
       cache: true,
       favicons: {
         appName: "Solvenius",
