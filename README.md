@@ -2,6 +2,8 @@
 
 _Logic game in modern Elm_
 
+![Game screen](static/screenshots/Game.jpg)
+
 ## Introduction
 
 Twenty years ago, in 2001, I created the very first version of Solvenius: it was a simple videogame, written in Visual Basic 6, but it still contained most of the game dynamics - in particular, the user had to deduce sequences of digits, à la Mastermind.
