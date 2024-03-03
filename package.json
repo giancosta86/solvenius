@@ -52,6 +52,6 @@
     "workbox-webpack-plugin": "^6.1.5"
   },
   "dependencies": {
-    "semver": "^7.3.5"
+    "semver": "^7.5.2"
   }
 }
